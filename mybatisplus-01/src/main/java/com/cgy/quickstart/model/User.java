@@ -1,4 +1,4 @@
-package com.cgy.demo01.model;
+package com.cgy.quickstart.model;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;

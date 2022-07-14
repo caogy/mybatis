@@ -1,7 +1,8 @@
-package com.cgy.demo01.mapper;
+package com.cgy.quickstart.mapper;
+
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.cgy.demo01.model.User;
+import com.cgy.quickstart.model.User;
 
 public interface UserMapper extends BaseMapper<User> {
 
