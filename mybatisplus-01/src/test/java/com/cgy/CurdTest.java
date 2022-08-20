@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.cgy.curd.mapper.User1Mapper;
 import com.cgy.curd.mapper.User2Mapper;
 import com.cgy.curd.model.User;
@@ -30,6 +31,7 @@ public class CurdTest {
         user.setName("小杨").setAge(3).setEmail("abc@qq.com");
         int c = user1Mapper.insert(user);
         Assertions.assertThat(c).isGreaterThan(0);
+
     }
 
     @Test
@@ -131,7 +133,6 @@ public class CurdTest {
         //List<Map<String, Object>> mapList = user1Mapper.selectMaps(wrapper);
 
         var userList = user1Mapper.selectList(Wrappers.<User>lambdaQuery().select(User::getAge).groupBy(User::getAge).orderByAsc(User::getAge));
-
 
     }
 
