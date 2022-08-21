@@ -1,0 +1,10 @@
+logging:
+  level:
+    com.cgy.demo: debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://100.100.120.137:3380/mybatis?useSSL=false&useUnicode=true&characterEncoding=UTF-8
